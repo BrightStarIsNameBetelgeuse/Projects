@@ -1,3 +1,9 @@
+# Node Files #
+/node_modules
+
+# IDE #
+.idea/
+
 *.py[cod]
 
 # C extensions
