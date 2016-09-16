@@ -104,11 +104,11 @@ var getNumberFibonacci = function (num) {
 $(document).ready(function () {
 
     var input_block = $('#input'),
-        result_block = $('#prime-result'),
-        text="";
+        result_block = $('#prime-result');
     var array = [];
     $('#submit').on('click', function () {
-        var value = input_block.val();
+        var value = input_block.val(),
+            text="";
         array = [];
         result_block.val("");
 
@@ -138,6 +138,11 @@ $(document).ready(function () {
         }
         result_block.text(text);
     });
+
+    $('#clear').on('click', function(){
+        $('#prime-result').text('');
+    });
+
     describe('pow', function(){
 
     });
