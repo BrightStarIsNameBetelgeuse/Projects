@@ -22,7 +22,10 @@ export default {
                 test: /\.js$/,
                 include: path.join(__dirname, 'client'),
                 loaders: ['babel']
-            }
+            },
+            { test: /\.css$/, loader: "style-loader!css-loader" },
+            { test: /\.png$/, loader: "url-loader?limit=100000" },
+            { test: /\.jpg$/, loader: "file-loader" }
         ]
     },
     resolve: {
