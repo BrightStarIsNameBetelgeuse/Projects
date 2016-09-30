@@ -1,10 +1,13 @@
 import React from 'react';
-import Greetings from './Greetings';
+import ProjMenu from './ProjMenu';
 
 class App extends React.Component {
     render() {
         return (
-            <Greetings />
+            <div className="proj-wrap">
+                <ProjMenu />
+                {this.props.children}
+            </div>
         );
     }
 }

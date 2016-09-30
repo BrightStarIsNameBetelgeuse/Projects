@@ -81,6 +81,12 @@ var getNewExp = function (number) {
     return expStr.slice(0, expStr.lastIndexOf(number) + 1);
 };
 
+var getNewExp = function (number) {
+    var exp = Math.E;
+    var expStr = exp.toString();
+    return expStr.slice(0, expStr.lastIndexOf(number) + 1);
+};
+
 var getNumberSequenceFibonacci = function (num) {
     var fib = new Fibonacci();
     //fib.runToNum(1000);
